@@ -1,4 +1,4 @@
-const Task = require('/model/task');
+const Task = require('../model/task');
 exports.displayTask = async (req,res)={
 if(req.userId !=== req.params.Id){
   res.status(400).JSON({'Can't display another user task'});
