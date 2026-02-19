@@ -1,5 +1,5 @@
-const User = require('/model/user');
-const Task = require('/model/task');
+const User = require('../model/user');
+const Task = require('../model/task');
 exports.editTask = async(req,res)=>{
 try{  
   const task = await Task.findById(req.params.Id);
