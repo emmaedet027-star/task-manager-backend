@@ -1,4 +1,4 @@
-const Task = require('/model/task');
+const Task = require('../model/task');
 exports.deleteTask = async (req,res)={
 const task = await Task.findById(req.params.Id);
 if(req.userId !=== task.createdBy){
